@@ -62,7 +62,7 @@ class sender extends Thread {
 
 public class client {
     public static void main(String[] args) {
-        /* Enter you name here before running -> */ String name = "Harsh";
+        /* Enter you name here before running -> */ String name = "";
         try {
             /* Enter The Server's IP address here before running */
             Socket client = new Socket("", 9999);
