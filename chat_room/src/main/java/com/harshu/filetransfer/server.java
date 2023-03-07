@@ -10,7 +10,7 @@ public class server {
 
     public static void main(String[] args) {
         try (ServerSocket harshu = new ServerSocket(9999)) {
-            System.out.println("Server bound at (localhost)" + Inet4Address.getLocalHost().getHostAddress());
+            System.out.println("Server bound at " + Inet4Address.getLocalHost().getHostAddress());
             Socket guddu = harshu.accept();
             if (guddu.isConnected()) {
                 System.out.println("Connected to client : " + guddu.getRemoteSocketAddress());
